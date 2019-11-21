@@ -13,7 +13,7 @@ if(wiringPiSetup() == -1) return 1;
 pinMode(PIN, INPUT);
 for(;;){
 	val = digitalRead(PIN);
-	if(val == 0) printf("buttIsPressed\n");
+	if(val == 1) printf("buttIsPressed\n");
 
 }
 }
